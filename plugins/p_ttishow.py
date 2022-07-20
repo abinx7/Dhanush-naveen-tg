@@ -53,7 +53,7 @@ async def save_group(bot, message):
             for u in message.new_chat_members:
                 buttonrs = [
             [
-                InlineKeyboardButton('Updates', url='https://t.me/TamilMVOfficials'),
+                InlineKeyboardButton(f'🍿 ɪɴꜰᴏ', 'abin'),
                 InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
@@ -161,7 +161,16 @@ async def get_ststs(bot, message):
     size = get_size(size)
     free = get_size(free)
     await rju.edit(Script.STATUS_TXT.format(files, total_users, totl_chats, size, free, cpu, ram))
-
+    
+elif query.data == "abin":  
+        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ʟᴏᴋɪ S01 E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n© Moviehub", show_alert=True)   
+                           
+    elif query.data == "close_pages":
+        await query.message.delete()
+        try:
+            await query.message.reply_to_message.delete()
+        except:
+            pass
 
 # a function for trespassing into others groups, Inspired by a Vazha
 # Not to be used , But Just to showcase his vazhatharam.
