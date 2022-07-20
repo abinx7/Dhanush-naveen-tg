@@ -162,7 +162,9 @@ async def get_ststs(bot, message):
     free = get_size(free)
     await rju.edit(Script.STATUS_TXT.format(files, total_users, totl_chats, size, free, cpu, ram))
     
-elif query.data == "abin":  
+            reply_markup = InlineKeyboardMarkup(buttons)
+            await query.message.edit_reply_markup(reply_markup)
+    elif query.data == "abin":  
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ʟᴏᴋɪ S01 E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n© Moviehub", show_alert=True)   
                            
     elif query.data == "close_pages":
