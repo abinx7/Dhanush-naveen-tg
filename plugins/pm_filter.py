@@ -1075,7 +1075,7 @@ async def auto_filter(client, msg, spoll=False):
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await hehe.delete()
-            await client.send_photo(
+            await msg.edit(
                 chat_id=message.chat.id,
                 photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
@@ -1087,7 +1087,7 @@ async def auto_filter(client, msg, spoll=False):
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await hmm.delete()
-            await client.send_photo(
+            await msg.edit(
                 chat_id=message.chat.id,
                 photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
@@ -1098,7 +1098,7 @@ async def auto_filter(client, msg, spoll=False):
             fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await fek.delete()
-            await client.send_photo(
+            await msg.edit(
                 chat_id=message.chat.id,
                 photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
@@ -1108,7 +1108,7 @@ async def auto_filter(client, msg, spoll=False):
         fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(600)
         await fuk.delete()
-        await client.send_photo(
+        await msg.edit(
             chat_id=message.chat.id,
             photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
             caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ {search} Cʟᴏꜱᴇᴅ 🗑️",
